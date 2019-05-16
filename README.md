@@ -24,6 +24,7 @@
 |git log 															|(lista os commits e seus comentários)								|
 |git log -p 														|	(imprime também os commits nos quais não houve modificação)		|
 |git wathchanged -p 												|	(mais detalhado)												|
+|gitk 														|	historico visual do git								|
 |git remote 														|	(mostra os repositorios remotos)								|
 |git remote add origin <url do github> 								|(linka o repositorio local com o remoto do github)					|
 |git push <origin> <master> 										|	(anvia os commits para o repositorio e a branch designada)		|
