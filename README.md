@@ -3,6 +3,14 @@
 | Comando                                       					| Descrição                                							|
 | :-------------------                            					| :-------------------                  							|
 |git init 															|(inicializa o controle do git no local requisitado)				|
+|git stash  															|salva os arquivos não commitados em uma lista na memória 				|
+|git stash list 															|exibe as listas de arquivos salvos em memória 				|
+|git stash apply 															|aplica a lista de arquivo que está no top				|
+|git stash apply stash@{2} 															|aplica uma lista de arquivo específica				|
+|git stash drop 															|remove a lista de arquivo que está no top				|
+|git stash drop stash@{2} 															|remove uma lista de arquivo específica				|
+|git stash pop  															|aplica a lista de arquivo que está no top e depois a remove				|
+|git stash pop stash@{2} 															|aplica uma lista de arquivo específica e depois a remove				|
 |git ls-files 														|(lista os arquivos controlados pelo git)							|
 |git status 														|	(exibe o estado de todos os arquivos controlados ou não)		|	
 |git add <<nome do arquivo 1> <nome do arquivo 2> ou . para todos> 	|(adiciona os arquivos para um próximo commit do git)				|
