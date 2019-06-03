@@ -25,7 +25,9 @@
 |git checkout <branch> 												|(usa a branch)														|
 |git checkout -b <branch> 											|(cria branch)														|
 |git merge <desenvolvimento> 										|(realizar ação para atualizar sua branch a partir de outra)		|
-|git format-patch -1 master                                         |																	|
+|git format-patch -1 master                                         |	Cria um arquivo de patch																|
+|git stash show -p stash@{0} > patch.txt                                |	Cria um arquivo de patch de uma stash																|
+|git apply patch.txt                                         |	Aplica o arquivo de patch																|
 |git diff v0.1 v0.2 												|	(verifica as diferenças entre os arquivos)						|
 |git blame css/index.css 											|(lista todo os histórico detalhado do arquivo indicado)			|
 |git tag 															|(ver versões do seu projeto)										|
