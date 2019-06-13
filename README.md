@@ -4,6 +4,8 @@
 | :-------------------                            					| :-------------------                  							|
 |git init 															|(inicializa o controle do git no local requisitado)				|
 |git stash  															|salva os arquivos não commitados em uma lista na memória 				|
+|git stash save "Message"  															|salva os arquivos não commitados em uma lista na memória com mensagem 				|
+|git stash -u   															|salva os arquivos não rastreados em uma lista na memória 				|
 |git stash list 															|exibe as listas de arquivos salvos em memória 				|
 |git stash apply 															|aplica a lista de arquivo que está no top				|
 |git stash apply stash@{2} 															|aplica uma lista de arquivo específica				|
