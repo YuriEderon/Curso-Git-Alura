@@ -28,6 +28,8 @@
 |git checkout -b <branch> 											|(cria branch)														|
 |git merge <desenvolvimento> 										|(realizar ação para atualizar sua branch a partir de outra)		|
 |git format-patch -1 master                                         |	Cria um arquivo de patch																|
+|git format-patch -1 <sha>                                         |	Cria um arquivo de patch de um commit específico |
+  
 |git stash show -p stash@{0} > patch.txt                                |	Cria um arquivo de patch de uma stash																|
 |git apply patch.txt                                         |	Aplica o arquivo de patch																|
 |git diff v0.1 v0.2 												|	(verifica as diferenças entre os arquivos)						|
@@ -41,6 +43,11 @@
 |git remote add origin <url do github> 								|(linka o repositorio local com o remoto do github)					|
 |git push <origin> <master> 										|	(anvia os commits para o repositorio e a branch designada)		|
 |git push -u ou --set-upstream 										|(atrela a branch remota à local, fazendo com que não seja mais necessário passar como parâmetros a origem e a branch no comando)	|
+|git config --system core.longpaths true        | configuração para o git aceitar arquivos com com path muito extenso  |
+|gitk --all $( git fsck --no-reflog | awk '/dangling commit/ {print $3}' )    | abre o gitk exibindo todos os commits (bom para o caso acidental de deleção de stash) |
+|git branch <nome da branch> <sha de 7 digitos>             | cria uma branch local com o commit requerido |
+|git stash apply <nome da branch>              | aplica a branch local |
+  
 
 
 * working directory: representa o estado atual dos arquivos no repositório;
