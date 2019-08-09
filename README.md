@@ -47,6 +47,7 @@
 |gitk --all $( git fsck --no-reflog <pipe aqui para não quebrar o md> awk '/dangling commit/ {print $3}' )    | abre o gitk exibindo todos os commits (bom para o caso acidental de deleção de stash) |
 |git branch <nome da branch> <sha de 7 digitos>             | cria uma branch local com o commit requerido |
 |git stash apply <nome da branch>              | aplica a branch local |
+|~~~~ grep -lr '<<<<<<<' --include="pom.xml" | xargs git merge origin/development -X ours ~~~~ | comando louco muito específico para uma galerinha do barulho |
   
 
 
