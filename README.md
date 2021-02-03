@@ -24,6 +24,7 @@
 |git config --global user.name "<Your Name>" 						|(configura o nome do usuário)										|
 |git clone https://github.com/blablabla/projeto.git 				|	(baixa a última versão do projeto)								|
 |git fetch origin --prune 											|(atualiza as branchs locais verificando as excluídas no remote)	|
+|git fetch --tags && git checkout 1.0.14-35 |(atualiza e baixa uma tag)	|
 |git branch -r 														|(exibe todas as branchs do remote)									|
 |git checkout <branch> 												|(usa a branch)														|
 |git checkout -b <branch> 											|(cria branch)														|
